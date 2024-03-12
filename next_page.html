@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmation</title>
+<style>
+    body {
+        font-family: Georgia, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .confirmation-container {
+        text-align: center;
+    }
+    .confirmation-container p.large-text {
+        font-size: 24px; /* Adjust font size as needed */
+    }
+    .confirmation-container p {
+        font-size: 13px;
+    }
+    .confirmation-container img {
+        display: block;
+        margin: 20px auto;
+    }
+</style>
+</head>
+<body>
+
+<div class="confirmation-container">
+    <p class="large-text">bebeeee can i celebrate your birthday with you?</p>
+    <p>if kaya sa 20 mismo then sa 20 mismo if hindi sa holy week lets celebrate here with my family! because wala my family is also your family fave child ka nga ohhhh hehehe MWAAAA</p>
+    <button onclick="showGif()">Yes</button>
+    <button onclick="showImage()">No</button>
+</div>
+
+<script>
+    function showGif() {
+        document.querySelector('.confirmation-container').innerHTML = "<img src='https://media3.giphy.com/media/l0MYII0NslGLwPZao/giphy.gif?cid=6c09b952007o39b3jnquldvxa6aqgfbcwkcbnseo3x3o5fqi&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g'>";
+    }
+
+    function showImage() {
+        document.querySelector('.confirmation-container').innerHTML = "<img src='https://m.media-amazon.com/images/M/MV5BMmM2YWFlZTgtOTNkZS00ZTA3LWE0NmQtMmE2NmVkYmRmNDE0XkEyXkFqcGdeQXVyMjA0NDcyOTg@._V1_FMjpg_UX1000_.jpg'>";
+    }
+</script>
+
+</body>
+</html>
